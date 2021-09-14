@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 class JenkinsCalcController {
      @Autowired
-     private Calculator calculator;
+     private JenkinsCalc calculator;
 
      @RequestMapping("/sum")
      String sum(@RequestParam("a") Integer a,
